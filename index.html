@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waqas Ahmad — Game Developer</title>
+  <meta name="description" content="Waqas Ahmad — mobile game developer. 16 shipped titles on Google Play, 12M+ combined downloads." />
+  <link rel="icon" href="assets/icons/com.ludoluck.dice.game.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#top" class="brand"><span class="dot"></span>waqas<b>.ahmad</b></a>
+      <div class="links" id="links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#reel">Reel</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="orbit" id="orbit" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="status"><span class="pulse"></span>Available for new projects — 2026</p>
+        <h1 class="display">
+          <span class="line"><span>Waqas</span></span>
+          <span class="line"><span class="outline">Ahmad</span></span>
+        </h1>
+        <p class="hero-sub">
+          Mobile game developer. I build <em>board</em>, <em>puzzle</em>, <em>runner</em> and
+          <em>3D simulation</em> games that people can't put down — <strong>16 titles shipped</strong>,
+          <strong>12M+ downloads</strong> on Google Play.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn primary magnetic">Explore my games <span>→</span></a>
+          <a href="#reel" class="btn glass magnetic"><span class="play-ic">▶</span> Watch reel</a>
+        </div>
+      </div>
+
+      <div class="scroll-hint"><span></span>scroll</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track" id="track"></div>
+    </div>
+
+    <!-- BENTO / ABOUT -->
+    <section id="about" class="section">
+      <div class="sec-head reveal">
+        <span class="kicker">// 01 — About</span>
+        <h2>Gameplay first.<br /><span class="muted">Shipped, not just prototyped.</span></h2>
+      </div>
+
+      <div class="bento">
+        <article class="card bio reveal spot">
+          <span class="label">Who I am</span>
+          <p>
+            I'm <b>Waqas Ahmad</b> — I take mobile games from first prototype to live store release.
+            My catalogue ranges from Ludo and word puzzles to endless runners, idle tycoons and
+            open-world animal &amp; vehicle simulators.
+          </p>
+          <p class="muted">
+            I care about tight controls, buttery performance on low-end Android devices,
+            satisfying game feel and monetization that respects the player.
+          </p>
+        </article>
+
+        <article class="card stat reveal spot accent">
+          <span class="label">Combined downloads</span>
+          <div class="big"><span data-count="12">0</span>M+</div>
+          <span class="foot">across Google Play</span>
+        </article>
+
+        <article class="card stat reveal spot">
+          <span class="label">Games shipped</span>
+          <div class="big"><span data-count="16">0</span></div>
+          <span class="foot">and counting</span>
+        </article>
+
+        <article class="card stack reveal spot">
+          <span class="label">Toolkit</span>
+          <div class="chips">
+            <span>Unity</span><span>C#</span><span>Android</span><span>Play Console</span>
+            <span>AdMob</span><span>IAP</span><span>Firebase</span><span>Vehicle Physics</span>
+            <span>Animal AI</span><span>Level Design</span><span>UI / UX</span><span>Optimization</span>
+          </div>
+        </article>
+
+        <article class="card genres reveal spot">
+          <span class="label">Genres</span>
+          <ul>
+            <li><b>Board</b><i>Ludo · Dice</i></li>
+            <li><b>Puzzle</b><i>Word · Tile · Arrow</i></li>
+            <li><b>Arcade</b><i>Runner · Hyper-casual</i></li>
+            <li><b>Simulation</b><i>Driving · Animal · Tycoon</i></li>
+          </ul>
+        </article>
+
+        <article class="card top reveal spot">
+          <span class="label">Top performer</span>
+          <div class="top-game">
+            <img src="assets/icons/com.mft.wild.lion.simulator.animal.hunting.game.webp" alt="Lion Family Simulator icon" />
+            <div><b>Lion Family Simulator</b><i>500K+ downloads</i></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="sec-head reveal">
+        <span class="kicker">// 02 — Selected work</span>
+        <h2>The game library</h2>
+      </div>
+
+      <div class="featured" id="featured"></div>
+
+      <div class="toolbar reveal">
+        <div class="filters" id="filters">
+          <button class="active" data-f="all">All <sup id="cnt-all"></sup></button>
+          <button data-f="board">Board</button>
+          <button data-f="puzzle">Puzzle</button>
+          <button data-f="arcade">Arcade</button>
+          <button data-f="sim">Simulation</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- REEL -->
+    <section id="reel" class="section">
+      <div class="sec-head reveal">
+        <span class="kicker">// 03 — Reel</span>
+        <h2>See it in motion</h2>
+      </div>
+      <div class="reel reveal">
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/15M_cokOShuH6tizwJgRPfxjWqovsiPUA/preview"
+                  allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Driving Doctor Learning gameplay"></iframe>
+        </div>
+        <div class="reel-info">
+          <span class="label">Now playing</span>
+          <h3>Driving Doctor Learning</h3>
+          <p class="muted">Gameplay capture of a driving-school learning game — traffic rules, parking challenges and realistic car handling.</p>
+          <a class="btn glass" target="_blank" rel="noopener" href="https://drive.google.com/file/d/15M_cokOShuH6tizwJgRPfxjWqovsiPUA/view?usp=sharing">Open in Drive ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <span class="kicker reveal">// 04 — Contact</span>
+      <h2 class="mega reveal">Got a game idea?<br /><span class="grad">Let's ship it.</span></h2>
+      <!-- TODO: apni asli contact details yahan daalein -->
+      <a href="mailto:waqas@example.com" class="mail reveal magnetic">waqas@example.com <span>↗</span></a>
+      <div class="socials reveal">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://wa.me/920000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://play.google.com/store" target="_blank" rel="noopener">Google Play</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="yr"></span> Waqas Ahmad</span>
+    <span class="mono">Built for players. Made in Pakistan.</span>
+    <a href="#top" class="mono">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
